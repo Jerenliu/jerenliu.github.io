@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jeren的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-11-04T14:40:26.247Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Jeren</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HEXO(Next主题)+Github+Git部署一个属于自己的博客教程（一）</title>
+    <link href="http://yoursite.com/blog/hello-world/"/>
+    <id>http://yoursite.com/blog/hello-world/</id>
+    <published>2019-10-31T00:11:43.944Z</published>
+    <updated>2019-11-04T14:40:26.247Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    基于HEXO+Github+Git搭建的博客终于大功告成了，在我搭建这个博客的过程中，走了很多弯路，其中也看了很多的博文和教程，但众说纷纭，所以有必要尽快把我搭建博客的整个过程记录下来（免得忘记），一方面是为了让浏览到此篇文章的小伙伴少走一些弯路，另一方面是希望把
+      
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="HEXO" scheme="http://yoursite.com/tags/HEXO/"/>
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>

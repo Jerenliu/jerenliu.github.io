@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>HEXO(Next主题)+Github+Git部署一个属于自己的博客教程（一）</title>
+    <url>/blog/hello-world/</url>
+    <content><![CDATA[<p>​    基于HEXO+Github+Git搭建的博客终于大功告成了，在我搭建这个博客的过程中，走了很多弯路，其中也看了很多的博文和教程，但众说纷纭，所以有必要尽快把我搭建博客的整个过程记录下来（免得忘记），一方面是为了让浏览到此篇文章的小伙伴少走一些弯路，另一方面是希望把整个过程记录下来，以至于下一次搭建博客，会节省一些时间。补充一下，整个搭建过程都是基于windows的。下面我们就开始吧！</p>
+<h3 id="1、环境搭建"><a href="#1、环境搭建" class="headerlink" title="1、环境搭建"></a>1、环境搭建</h3><h3 id="1-1安装node框架"><a href="#1-1安装node框架" class="headerlink" title="1.1安装node框架"></a>1.1安装node框架</h3><p>HEXO是基于node框架的，所以我们首先要下载安装node,下载地址[node.js官网]&lt; <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> &gt;</p>
+<p>推荐下载长期支持版（即LTS版），因为当前发布版虽然含新功能但不稳定，而且奇数版在当前版本发布之后六个月将变为不支持状态（node.js版本不得低于8.6建议10.0及以上版本）</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/nodedownload.png" alt="node_download"></p>
+<p>安装完成后win+R启动命令行，输入<code>node -v</code>，来检测安装是否成功。如果返回如下图所示，证明你安装成功了</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/nodesucc.png" alt="mark"></p>
+<h3 id="1-2注册Github账号"><a href="#1-2注册Github账号" class="headerlink" title="1.2注册Github账号"></a>1.2注册Github账号</h3><p>Github推出的Github Pages服务可以很方便的建立一个属于我们自己的个人博客</p>
+<p>进入[Github 网站]，按照提示进行注册然后登陆（已经注册过的大佬绕过）</p>
+<p>点击右上角加号—&gt;new repository，新建一个仓库，这个仓库就是用来存放博客的地方</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/newrepo.png" alt=""></p>
+<p>接着进入到创建仓库界面，Repository name就是使用浏览器访问你的博客的地址</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/createrepo.png" alt="createrepo"></p>
+<h3 id="1-3安装Git"><a href="#1-3安装Git" class="headerlink" title="1.3安装Git"></a>1.3安装Git</h3><p>为了能够把自己所写的博客上传到github上面去，我们使用分布式版本控制工具——[git官网]&lt; <a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a> &gt; 进入官网后，直接下载安装最新版就可以了。安装完成之后在桌面右键会有一个Git Bash。类似于Linux终端，可以模拟Linux下的终端进行操作。可以在命令提示符中输入<code>git --version</code>打开之后，像下图这样</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/gitbash.png" alt="git bash"></p>
+<h3 id="1-4安装HEXO"><a href="#1-4安装HEXO" class="headerlink" title="1.4安装HEXO"></a>1.4安装HEXO</h3><p>HEXO的安装在它的[官方文档]&lt; <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a> &gt;中说的很详细，下面我就简单的介绍一下HEXO的安装</p>
+<h4 id="1-4-1新建一个用来存放博客的文件夹"><a href="#1-4-1新建一个用来存放博客的文件夹" class="headerlink" title="1.4.1新建一个用来存放博客的文件夹"></a>1.4.1新建一个用来存放博客的文件夹</h4><p>在合适的位置新建一个用来存放今后所写博客的文件夹，比如我的存放在<code>E:\my blog\</code>目录下</p>
+<p>创建成功后进入该文件夹，在该目录下右键打开Git Bash Here，启动Git控制台（后面所有的命令行操作都用Git,不用windows自带的命令提示符，即CMD），输入<code>npm i hexo-cli-g</code>安装HEXO，会出现几个报错，但是不用理会</p>
+<p>安装完成后输入<code>hexo -v</code>，出现下图界面，表示安装成功</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/hexo-v.png" alt="hexo-version"></p>
+<p>随后，初始化文件夹，仍然在该命令行窗口执行<code>hexo init 新建的文件夹名</code></p>
+<p>接着，输入<code>npm install</code>安装所需要的组件。在刚刚新创建的文件夹下就会产生文件目录</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/hexofolder.png" alt="hexofolder"></p>
+<ul>
+<li><code>_config.yml</code>文件是网站的配置文件，可以配置大部分参数，也是最重要的文件</li>
+<li>package.json文件是应用程序的信息</li>
+<li>source是资源文件夹，是用来存放用户的资源，如用户每次编写的博客、标签页面、分类页面</li>
+<li>themes是主题文件夹，HEXO会根据主题生成不同的静态页面</li>
+<li>scaffolds是模板文件夹，新建的文章会根据模板来建立文件</li>
+</ul>
+<h2 id="2、开始搭建"><a href="#2、开始搭建" class="headerlink" title="2、开始搭建"></a>2、开始搭建</h2><h4 id="2-1部署到本地"><a href="#2-1部署到本地" class="headerlink" title="2.1部署到本地"></a>2.1部署到本地</h4><p>其实在环境配置完成之后，就已经在本地生成了博客主页。仍然是在刚刚的Git命令行中执行<code>hexo g</code>(hexo generation,生成静态页面)，然后执行<code>hexo s</code>（hexo server 启动本地服务，进行文章预览调试）。然后浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 就可以看到你博客的效果啦，不过这是本地调试用，其他人是看不到的。(调试完毕后记得 control + C 关闭本地端口，不然下次是进不去的)   看下图：</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/landscape.png" alt="landscape"></p>
+<p>这是安装HEXO的默认主题，在之后的博文中，我会分享如何更改主题</p>
+<h4 id="2-2部署到Github"><a href="#2-2部署到Github" class="headerlink" title="2.2部署到Github"></a>2.2部署到Github</h4><h5 id="2-2-1部署签名"><a href="#2-2-1部署签名" class="headerlink" title="2.2.1部署签名"></a>2.2.1部署签名</h5><p>先使用下面的命令对Git进行初始化配置，即设置签名，作用是区别不同开发人员身份。这里邮箱地址不一定非得是注册Github的邮箱地址，任意邮箱即可，作用不是很大。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;your name&quot;</span><br><span class="line">$ git config --global user.email &quot;your e-mail address&quot;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-2配置SSH"><a href="#2-2-2配置SSH" class="headerlink" title="2.2.2配置SSH"></a>2.2.2配置SSH</h5><p>  打开Git Bash，执行下面的命令生成SSH访问私钥及公钥   </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;email@email.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>当提示输入的时候，不用管，一直回车就可以。</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/SSH.png" alt="SSH"></p>
+<p>然后<code>/c/users/你的电脑账户名/.ssh</code>文件下会生成两个文件</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/sshid.png" alt="sshid"></p>
+<p>然后打开你的Github,点击右上角头像–&gt;Setting–&gt;SSH keys。</p>
+<p>然后点击<code>New SSH Key</code>新建一个SSH key。Tittle可以自己起。然后将<code>id_rsa.pub</code></p>
+<p>文件中的内容复制粘贴到Key下面。然后用下面的命令测试是否连接到Github</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>如果出现下图所示内容则证明连接成功</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/sshkeysucc.png" alt="sshkeysucc"></p>
+<h5 id="2-2-3设置deploy参数"><a href="#2-2-3设置deploy参数" class="headerlink" title="2.2.3设置deploy参数"></a>2.2.3设置deploy参数</h5><p>打开HEXO主文件夹下的<code>_config.yml</code>（鼠标移动到该文件上右键，选择opendlg打开），设置底部的<code>deply</code>参数，下面是我的设置。type和branch和我设置的一样就行</p>
+<p>其中repo在Github中进行复制，如下图：</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/jerensshaddr.png" alt="jerensshaddr"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:Jerenliu/jerenliu.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>  注意：配置的时候要严格注意格式，不然后面会出错（type,repo,branch后面的冒号统一用英文的，冒号后面必须有一个空格。type,repo,branch前面要有两个空格，并对齐）。后面进行配置文件都需要遵循这种格式   </p>
+<h4 id="2-3验证"><a href="#2-3验证" class="headerlink" title="2.3验证"></a>2.3验证</h4><p>  以上配置完成后保存 然后回到终端执行<code>npm install hexo-deployer-git --save</code>安装一个插件，这样才能将你写好的文章部署到github服务器上并让别人浏览到。安装完成后在终端中依次执行如下代码</p>
+<p>  <code>hexo clean</code>    作用：清理缓存</p>
+<p>  <code>hexo generate</code>    作用：进行渲染   简写： <code>hexo g</code></p>
+<p> 调试完毕后使用   <code>hexo deploy</code>     作用：部署到git服务器   简写： <code>hexo d</code>  </p>
+<p>然后就能在浏览器输入地址访问博客页面了</p>
+<h4 id="2-4问题"><a href="#2-4问题" class="headerlink" title="2.4问题"></a>2.4问题</h4><p>  当执行hexo d可能会出现如下错误</p>
+<p><img src="http://q0fjtnail.bkt.clouddn.com/erro.png" alt="erro"></p>
+<p>类似这样的错误，这个错误的原因是因为本地的博客版本与远程版本不一致</p>
+<p>第一种解释：.deploy_git这个文件的内容是用于将自己所写的博客部署到github仓库中的内容 </p>
+<p>第二种解释：这个应该是git部署用的文件。比如你写好的博客想部署到 GitHub Pages上去的话，可以用git部署插件，那个插件会创建这个目录</p>
+<p>那么如何解决这个问题呢？</p>
+<p>第一步，删除自己博客目录下的.deploy_git文件</p>
+<p>第二步，进入git,输入：hexo clean 清除缓存hexo g -d 渲染部署   </p>
+<p>  执行完以上操作后打开浏览器地址栏输入你的博客地址，就可以看到效果了</p>
+<p>​      </p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>HEXO</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+</search>
