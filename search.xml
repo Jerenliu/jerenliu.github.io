@@ -1,8 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Node.js教程0-1Node.js介绍</title>
+    <url>/Node-js/Node-js%E6%95%99%E7%A8%8B0-1Node-js%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p> 在前端的道路上摸爬滚打，终于来到了Node.js。这是我第一次在这里写教程。如有错误，望读者海涵指正，我也会去不断的改进。希望我写的东西，能够给你们帮助。<br>  在写之前，我想分享一件很有意义的事情。对于大多数刚入门的程序小白来说，学一门语言或技术，经常会忘记。一周前学过的东西，如果不经常复习就会忘记，大概也就记得30%—70%，其实我也是这样的。面对这样的情况，深入理解知识点那是必须的，如何深入理解呢？本人亲身实践，认为一个非常见效的方法就是：学习一个知识点要知道学的是什么？为什么？（程序执行原理是什么）怎么做？（如何去使用这个知识点） 什么时候能用到这个知识点？在什么地方能用到这个知识点？概括来说就是：what、why、how、when、where.<br>  在学习之前，知道这五个要点是非常重要的。<br>  在学习过程中，会遇到数不胜数的API,我们不是电脑，是人脑，不需要我们过目不忘，不需要我们全都记住。用到的时候，查找对应的文档就可以。我们需要记住的是如何去找到API以及如何解决问题。<br>  该教程针对于有HTML、CSS、javaScript基础的小白，如果有Java、PHP、Ruby、.NET等服务端学习经验的你来说就更好了。接下来进入正题。</p>
+<h1 id="1、为什么要学习Node-js"><a href="#1、为什么要学习Node-js" class="headerlink" title="1、为什么要学习Node.js"></a>1、为什么要学习Node.js</h1><p>  现在越来越多的公司和个人开发者去使用Node.js去开发各种应用。相信有很多朋友是从前端开发过来看我写的这个教程的，目前，企业在招前端工程师的时候，要求具有服务端开发经验最好。而且对于个人职业发展，当然是掌握的技能越多越有竞争优势。对于后端开发的来说，Node.js有其他后端语言没有的特性。</p>
+<h1 id="2、Node-js是什么"><a href="#2、Node-js是什么" class="headerlink" title="2、Node.js是什么"></a>2、Node.js是什么</h1><p>  Node.js不是一门语言，不是库不是框架，是一个不需要浏览器的javaScript的运行环境。也就是说Node.js可以解析和执行javaScript代码。<br>  那么，Node.js中的javaScvript和浏览器中运行的javaScript有什么不同呢？</p>
+<ul>
+<li>浏览器中的javaScript包括三个部分：EcmaScript标准、DOM、BOM</li>
+<li>Node.js中的javaScript只有SCMAScript标准，没有DOM和BOM</li>
+<li>另外，在Node.js中，还提供了一些用javaScript操作的服务器级别的API，例如：文件读写、网络服务的构建、网络通信、http服务器等。这些API在浏览器中运行的javaScript是没有的。<h2 id="2-1-Node-js的历史"><a href="#2-1-Node-js的历史" class="headerlink" title="2.1 Node.js的历史"></a>2.1 Node.js的历史</h2>曾经有一个叫瑞安·达尔(Ryan Dahl)的数学博士，和女朋友去了德国，在那里，有个叫Chris的人开发了一个叫做Rack的Web服务器，这个服务器有非常简单的接口设计——接受请求，返回响应。这时候，Ryan在从事自由职业的同时，接触到了Nginx的一些模块，他发现Nginx很多东西都是异步的。于是，他就把Rack和Nginx的非阻塞IO模型结合起来。到了2008年12月Google发布了V8引擎，天时地利人和，Ryan发现V8引擎既简介有有趣，而且运行速度很快。Ryan突然想到：javaScript本身就是单线程的（不能进行同步IO操作），而且浏览器发起的Ajax请求就是非阻塞的。如果将javaScript和异步IO以及一个简单的HTTP服务器集合在一起会怎样？于是，2009年，Node.js问世。直到2012 年 1 月 - Ryan Dahl 宣布不再参与 Node.js 日常开发和维护工作。直至目前，Node.js由Node.js基金会持有和维护。<h2 id="2-2-Node-js的特性"><a href="#2-2-Node-js的特性" class="headerlink" title="2.2 Node.js的特性"></a>2.2 Node.js的特性</h2></li>
+<li>event-driven(事件驱动)</li>
+<li>non-blocking I/O model(非阻塞IO模型)</li>
+<li>built on Chrome’s V8 JavaScript engine（构建于V8引擎之上）<br>Google Chrome 的V8引擎是目前公认的解析和执行javaScript代码最快的，Ryan把Chrome中的V8引擎移植出来，开发了一个独立的js运行环境<h2 id="2-3-npm"><a href="#2-3-npm" class="headerlink" title="2.3 npm"></a>2.3 npm</h2>npm是世界上最大的开源生态系统，<a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm官网</a><br>npm是nodejs的包管理器（node package manager）。绝大多数的javaScript相关的包都放在了npm上，这样做得目的是为了让开发人员更方便的去下载使用。大家把自己写好的源码上传到npm官网上，如果要用某个或某些个，直接通过npm安装就可以了。<h1 id="3、Node-js资源分享"><a href="#3、Node-js资源分享" class="headerlink" title="3、Node.js资源分享"></a>3、Node.js资源分享</h1><a href="https://cnodejs.org/" target="_blank" rel="noopener">CNode社区 国内最大最具影响力的 Node.js 开源技术社区</a><br><a href="https://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="noopener">Node入门</a> 适合入门，文段不是很长<br><a href="http://nodejs.cn/api/" target="_blank" rel="noopener">中文文档</a> API的使用<br><a href="https://nodejs.org/dist/latest-v12.x/docs/api/" target="_blank" rel="noopener">英文文档</a> API的使用</li>
+<li>相关书籍<br>《深入浅出Node.js》作者：朴灵   这本书理论性知识较多，几乎没有实践内容，对理解原理和底层比较有帮助<br>《Node.js权威指南》API讲解，没有实战</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Node.js</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Node.js</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git&Github教程</title>
+    <url>/Git-Github/Git-Github%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>对于像我一样刚入门的IT小白来说，很多人应该还不知道Git和Github是什么吧。我刚刚整理了有关Git和Github的一些内容，所以想及时分享给大家。这篇博文不会让你成为Git大神，Git专家，但是会让你from zero to hero.如果你还对Git和Github一头雾水的话，那就继续往下看吧！</p>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="1、Git的发展史"><a href="#1、Git的发展史" class="headerlink" title="1、Git的发展史"></a>1、Git的发展史</h2><h2 id="2、Git是什么"><a href="#2、Git是什么" class="headerlink" title="2、Git是什么"></a>2、Git是什么</h2><h2 id="3、为什么要使用Git"><a href="#3、为什么要使用Git" class="headerlink" title="3、为什么要使用Git"></a>3、为什么要使用Git</h2><h2 id="4、如何操作Git"><a href="#4、如何操作Git" class="headerlink" title="4、如何操作Git"></a>4、如何操作Git</h2><h1 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h1>]]></content>
+      <categories>
+        <category>Git&amp;Github</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HEXO(Next主题)+Github+Git部署一个属于自己的博客教程（一）</title>
-    <url>/blog/hello-world/</url>
+    <url>/blog/HEXO(Next%E4%B8%BB%E9%A2%98)+Github+Git%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     <content><![CDATA[<p>​    基于HEXO+Github+Git搭建的博客终于大功告成了，在我搭建这个博客的过程中，走了很多弯路，其中也看了很多的博文和教程，但众说纷纭，所以有必要尽快把我搭建博客的整个过程记录下来（免得忘记），一方面是为了让浏览到此篇文章的小伙伴少走一些弯路，另一方面是希望把整个过程记录下来，以至于下一次搭建博客，会节省一些时间。补充一下，整个搭建过程都是基于windows的。下面我们就开始吧！</p>
 <h3 id="1、环境搭建"><a href="#1、环境搭建" class="headerlink" title="1、环境搭建"></a>1、环境搭建</h3><h3 id="1-1安装node框架"><a href="#1-1安装node框架" class="headerlink" title="1.1安装node框架"></a>1.1安装node框架</h3><p>HEXO是基于node框架的，所以我们首先要下载安装node,下载地址[node.js官网]&lt; <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> &gt;</p>
 <p>推荐下载长期支持版（即LTS版），因为当前发布版虽然含新功能但不稳定，而且奇数版在当前版本发布之后六个月将变为不支持状态（node.js版本不得低于8.6建议10.0及以上版本）</p>

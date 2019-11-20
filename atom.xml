@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-04T14:40:26.247Z</updated>
+  <updated>2019-11-20T08:31:47.731Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,9 +17,63 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Node.js教程0-1Node.js介绍</title>
+    <link href="http://yoursite.com/Node-js/Node-js%E6%95%99%E7%A8%8B0-1Node-js%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/Node-js/Node-js教程0-1Node-js介绍/</id>
+    <published>2019-11-20T08:29:28.000Z</published>
+    <updated>2019-11-20T08:31:47.731Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; 在前端的道路上摸爬滚打，终于来到了Node.js。这是我第一次在这里写教程。如有错误，望读者海涵指正，我也会去不断的改进。希望我写的东西，能够给你们帮助。&lt;br&gt;  在写之前，我想分享一件很有意义的事情。对于大多数刚入门的程序小白来说，学一门语言或技术，经常会忘记。一周前
+      
+    
+    </summary>
+    
+    
+      <category term="Node.js" scheme="http://yoursite.com/categories/Node-js/"/>
+    
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git&amp;Github教程</title>
+    <link href="http://yoursite.com/Git-Github/Git-Github%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/Git-Github/Git-Github教程/</id>
+    <published>2019-11-05T15:07:24.000Z</published>
+    <updated>2019-11-05T15:43:53.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;对于像我一样刚入门的IT小白来说，很多人应该还不知道Git和Github是什么吧。我刚刚整理了有关Git和Github的一些内容，所以想及时分享给大家。这篇博文不会让你成为Git大神，Git专家，但是会让你from zero to hero.如果你还对Git和Github一
+      
+    
+    </summary>
+    
+    
+      <category term="Git&amp;Github" scheme="http://yoursite.com/categories/Git-Github/"/>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HEXO(Next主题)+Github+Git部署一个属于自己的博客教程（一）</title>
-    <link href="http://yoursite.com/blog/hello-world/"/>
-    <id>http://yoursite.com/blog/hello-world/</id>
+    <link href="http://yoursite.com/blog/HEXO(Next%E4%B8%BB%E9%A2%98)+Github+Git%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/blog/HEXO(Next主题)+Github+Git部署一个属于自己的博客教程（一）/</id>
     <published>2019-10-31T00:11:43.944Z</published>
     <updated>2019-11-04T14:40:26.247Z</updated>
     
